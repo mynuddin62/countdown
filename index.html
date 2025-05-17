@@ -9,7 +9,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #1f4037, #99f2c8);
+      background-color: #f5f7fa;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       height: 100vh;
       color: #fff;
@@ -21,12 +21,15 @@
     }
 
     .countdown-container {
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
       padding: 40px 30px;
       border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
       max-width: 600px;
       width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     h1 {
@@ -101,7 +104,7 @@
 <body>
 
   <div class="countdown-container">
-    <h1>End of Chapter 02 Countdown</h1>
+    <h1>End of Chapter 02</h1>
     <div id="countdown">
       <div class="time-box">
         <div class="time-value" id="days">00</div>
